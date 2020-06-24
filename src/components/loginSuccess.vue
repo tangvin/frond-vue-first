@@ -15,7 +15,7 @@
                   class="el-menu-vertical-demo"
                   @open="handleOpen"
                   :collapse="isCollapse">
-        <template v-for="route in $router.options.routes" v-if="route.children && route.children.length">
+        <template v-for="route in $router.options.routes">
             <template v-for="item in route.children" >
               <el-menu-item 
                           :key="route.path + '/' + item.path"
