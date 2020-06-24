@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+// import '@/styles/index.scss'
+
 
 
 Vue.config.productionTip = false
@@ -17,4 +19,18 @@ new Vue({
   router,
   components: { App },
   template: '<App/>'
+})
+
+router.beforeEach((to, from, next) => {
+  if(to.path === '/login'){
+    sessionStorage.removeItem('user');
+  }
+  var user = sessionStorage.getItem('user');
+  if(!user && to.path !== '/login'){
+    next({
+      path: '/login'
+    })
+  }else{
+    next();
+  }
 })

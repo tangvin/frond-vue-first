@@ -1,11 +1,12 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
-</template>
+  <router-view/>
+</template>npm install node-sass sass-loader --save-dev
 
 <script>
-export default{
-  name:'App'
+export default {
+  name: 'App'
 }
 </script>
+
+<style>
+</style>
