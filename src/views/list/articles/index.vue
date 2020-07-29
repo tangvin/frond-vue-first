@@ -29,7 +29,7 @@
 <!--    <el-progress :percentage="50"></el-progress>-->
 <!--    <el-progress :percentage="100" :format="format"></el-progress>-->
 <!--    <el-progress :percentage="100" status="success"></el-progress>-->
-<!--    <el-progress :percentage="100" status="warning"></el-progress>-->
+    <!--    <el-progress :percentage="100" status="warning"></el-progress>-->
 <!--    <el-progress :percentage="50" status="exception"></el-progress>-->
     <br>
     <el-progress :text-inside="true" :stroke-width="26" :percentage="70"></el-progress>
@@ -44,6 +44,7 @@
     <el-progress type="circle" :percentage="25"></el-progress>
     <el-progress type="circle" :percentage="100" status="success"></el-progress>
     <el-progress type="circle" :percentage="70" status="warning"></el-progress>
+    <el-progress type="circle" :percentage="50" status="exception"></el-progress>
     <el-progress type="circle" :percentage="50" status="exception"></el-progress>
 
   </div>
